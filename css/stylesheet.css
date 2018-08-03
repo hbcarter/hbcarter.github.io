@@ -15,13 +15,16 @@ header {
 	background-color:#17252A;
 	float:left;
 }
+{
+.vid
+}
 /* Style the navbar */
 #navbar {
+	z-index:2;
  overflow: hidden;
  float:inherit;
  background-color: inherit;
 }
-
 /* Navbar links */
 #navbar a {
  float: center;
@@ -29,16 +32,16 @@ header {
  text-align: center;
  padding-left: 258px;
  text-decoration: none;
-
+ font-family: Arial, Helvetica, sans-serif;
 }
 /* Style the navbar */
 #navbar2 {
+	z-index:2;
  overflow: hidden;
  float:inherit;
  background-color: #3AAFA9;
  width:100%;
 }
-
 /* Navbar links */
 #navbar2 a {
  float: center;
@@ -46,55 +49,60 @@ header {
  text-align: center;
  padding-left: 258px;
  text-decoration: none;
-
+ font-family: Arial, Helvetica, sans-serif;
 }
-
 /* Page content */
 .content {
  padding: 16px;
 }
-
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
  position: fixed;
  top: 0;
  width: 100%;
 }
-
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
  padding-top: 60px;
-
 }
 
-.landing_header {
-	color: #FFFFFF;
-	text-align: center;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	letter-spacing: 4px;
-}
 /* Hero Section */
 .landing {
-	background-color:#3AAFA9;
+	background-color:#EDEDED;
 	padding-top: 208px;
-	padding-bottom: 355px;
+	padding-bottom:90px;
 	height: 100%;
+
 }
-.light {
-	font-weight: bold;
-	color: #717070;
+/* Bottom right text */
+.text-block5 {
+    position: absolute;
+    bottom: 20px;
+    right: 1029px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 111px;
+		text-align: center;
+		/* Container holding the image and the text */
+		.container {
+		    position: relative;
+		}
+
+		/* Bottom right text */
+		.text-block {
+		    position: absolute;
+		    bottom: 20px;
+		    right: 20px;
+		    background-color: black;
+		    color: white;
+		    padding-left: 20px;
+		    padding-right: 20px;
+		}
 }
-.tagline {
-	text-align: center;
-	color: #FFFFFF;
-	margin-top: 4px;
-	font-weight: lighter;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-}
+video{
+		display:block;
+		margin: 0 auto;
 }
 #wrapper {
 	position: absolute;
@@ -120,16 +128,11 @@ header {
 .about .column h3 {
 	color: #FFFFFF;
 	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
 }
 .about .column p {
 	color: #FFFFFF;
-}
-.cards {
-	width: 100%;
-	height: auto;
-	max-width: 400px;
-	max-height: 200px;
-	opacity: 0.8;
+
 }
 .about .column p {
 	padding-left: 7px;
@@ -178,6 +181,7 @@ header {
 	font-weight: lighter;
 	letter-spacing: 2px;
 	border-top-width: 2px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 footer {
 	background-color: #B3B3B3;
@@ -205,17 +209,23 @@ footer {
 /* portfolio Section */
 .portfolio{border-radius: 10px;
 background-color:#17252A;
-padding: 50px;
+padding: 100px;
 color:#ffffff
 }
 body, img {
     height: 100%;
     margin: 0;
 }
-.portfolio2{border-radius: 5px;
+.portfolio2{
+	position: inherit;
 background-color:#17252A;
 padding: 20px;
-color:#ffffff
+padding-top:100px;
+padding-bottom:
+50px;
+color:#ffffff;
+font-family: Arial, Helvetica, sans-serif;
+
 }
 div.desc2 {
     padding: 15px;
@@ -226,27 +236,28 @@ div.desc2 {
 }
 h2{
 	text-align: center;
-	padding-left:159px;
+
 	font-size:38px;
+	font-family: Arial, Helvetica, sans-serif;
+
 }
 h3{
 	color:#ffffff;
 	text-align: center;
 	padding-top: 40px;
-	padding-left:159px;
+
 	font-size:38px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 h4{
 	color:#fff;
 	padding-left: 17px;
 	font-size:30px;
+	font-family: Arial, Helvetica, sans-serif;
 }
-.bg {
-    /* The image used */
-    background-image: url("img/icon.jpg");
+.bg  img{
 
-    /* Full height */
-    height: 50%;
+    height: 30%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -289,13 +300,11 @@ div.desc {
 * {
     box-sizing: border-box;
 }
-
 .responsive {
     padding: 0 6px;
     float: left;
     width: 24.99999%;
 }
-
 @media only screen and (max-width: 700px) {
     .responsive {
         width: 49.99999%;
@@ -365,7 +374,7 @@ input[type=submit]:hover {
 .footer2 {
     background-color: #3AAFA9;
     padding: 10px;
-		padding-left:159px;
+		font-family: Arial, Helvetica, sans-serif;
 }
 .copyright2 {
 	text-align: center;
@@ -377,6 +386,7 @@ input[type=submit]:hover {
 	font-weight: lighter;
 	letter-spacing: 2px;
 	border-top-width: 2px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 .hidden {
 	display: none;
