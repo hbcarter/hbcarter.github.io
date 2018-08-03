@@ -16,3 +16,4 @@ function mynavbar2() {
   } else {
     navbar2.classList.remove("sticky");
   }
+}
